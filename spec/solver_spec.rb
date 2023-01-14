@@ -1,4 +1,4 @@
-require_relative 'solver'
+require_relative '../solver'
 
 RSpec.describe Solver do
   context 'Factorial' do
@@ -15,18 +15,18 @@ RSpec.describe Solver do
   context 'Reserve' do
     it 'Tests for the reverse method' do
       result = Solver.new
-      expect(result.reverse('John')).to eq 'nhoj'
-      expect(result.reverse('Dave')).to eq 'evaD'
+      expect(result.reversed('John')).to eq 'nhoJ'
+      expect(result.reversed('Dave')).to eq 'evaD'
     end
   end
 
   context 'Fizzbuzz' do
     it 'Tests for fizzbuzz method' do
       result = Solver.new
-      expect(result.fizzbuzz(3)).to eq 'fizz'
-      expect(result.fizzbuzz(5)).to eq 'buzz'
-      expect(result.fizzbuzz(15)).to eq 'fizzbuzz'
-      expect(result.fizzbuzz(13)).to eq result.fizzbuzz(13).to_s
+      expect(result.fizzbuzz(3)).to eq 'Fizz'
+      expect(result.fizzbuzz(5)).to eq 'Buzz'
+      expect(result.fizzbuzz(15)).to eq 'FizzBuzz'
+      expect(result.fizzbuzz(13)).to eq 13.to_s
     end
   end
 end
