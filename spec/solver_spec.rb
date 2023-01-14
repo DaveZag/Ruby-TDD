@@ -10,7 +10,7 @@ RSpec.describe Solver do
       expect(result.factorial(3)).to eq(6)
       expect(result.factorial(-2)).to eq('No negative number')
     end
-  end 
+  end
 
   context 'Reserve' do
     it 'Tests for the reverse method' do
